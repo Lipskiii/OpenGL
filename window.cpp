@@ -43,6 +43,10 @@ int main()
 
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
+    GLuint VertexArrayID;
+    glGenVertexArrays(1, &VertexArrayID);
+    glBindVertexArray(VertexArrayID);
+
     do
     {
         glClear(GL_COLOR_BUFFER_BIT);
