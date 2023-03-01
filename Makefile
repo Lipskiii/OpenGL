@@ -3,4 +3,4 @@ OpenGLFlags = -lGL -lGLEW -lglut -lglfw
 
 
 all:
-	$(CC) $(OpenGLFlags) -o opengl window.cpp
+	$(CC) $(OpenGLFlags) -o opengl shader.cpp window.cpp 
